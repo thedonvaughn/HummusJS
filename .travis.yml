@@ -18,8 +18,8 @@ env:
   - MUSL=true NODE_NVM_VERSION="10.8.0"
   - MUSL=true NODE_NVM_VERSION="11.2.0"
   global:
-  - secure: "E9eOZEc4/D/B3BULmx7x60jeMdaeWrx0h6JfsW985lsvHS1DQrLKPdMzzN724zupGfPA7OQz0PLHI0sFid3s1GcQQtfA1BnjDFIYHUScPMKJlvDhFa5/wpnJtVyhRdWdaPjuUR4gGatE4p4hNoYqE0W82woqkT4iAKdMqhQOaKeN0a80KcXqFMOOGczvaJ8WHOmRWIhjxgbfjQaVKfPJknVLk3U8j9j/50BTBKXkXLm+qPDj9Ww5N3sYULGdAy6fURVlrxR7CcueCagog7p5FsQ/r4MqNSFphqsrbaOYPP/kCI0LLrN9natii3rQuLgOihrdrNzkhUpD+t7Ng8n6jT+25HhoruQG5H5qQANZKbuoR+DLjvxffXuGatAB53a86eigKBQCukIC5o9BycOto0sYpLC5ddVMHjTGVXl/R4lBrzEs0dh1ytWKlg66o2GRbLbmLwB3jGCvMgVI//sjq3ecjib2BxNhfIwrQdXYd6kiUNhmyYcPb/c69spw2PSZwDwvpQi3Ze59/+kob/ogdTo3V+ugt3PCUkFbbN0fJy96BILiOkvoEiAEpDdGEQz4fegi/tGrAGAfP1q1L6n/88N9KEXT3MpvBq3xFDXG+z9wsWCxW3ZZS2cj1sRjHkajYlvkY55QcxgF9+/xvX+H9pcbwIFJOQyf+5qXghT/6aI="
-  - secure: "V5IrF13gGl+Rfxa/I/5ACo0eDHd/uIH9F5Fk0UAIBtWI4L6Arxm4w2UVYnUC1c6E0XW0fRlswbSaUTXVwakpnP1Tr28obgtK932CXH7KsVnq61D5kjyyQeLuggZuB3dlXu/4fKNt0yvD/jul0yWtTzkmMG8RHm0nfRg7ggMtY/mr+pEVZAAHf9DwCObn1zlIjjCDOq6Ec3kwVf3z9ptwOGqIIqeiF/UY0ElTHqP99XD8rUAC/d0jTWM4GBYo1l5kGQYBOY3WLOsxGxT+SId7JRqEwMCBxaeT9TU9ADUMI4ct+i5F+qJKeI02pq3XljHnkbjd9eLthhqUFgdfoWD47RIgGsG1vbdwrjN6WYGl3q13NJrSlUpv8vnjvl6x7QsOyxuvtLTwNGHUmLsiNhaHRHRSpnwcqjT2XL+t4XJdK3xRTU0Y2293Hyi0E00/0YeeLLIttHeoQq9h+YzHLok9lHdbvwKbkPt7LQ9Jgbf/1iiaSPEhOqmOrfKm804Lk/I+z72gbcZSXIPoF1QB5EowwOU4Ax5qEZBit9z1RdAN56WkmwU80QSGQGMKDjQgwLiOHaxL2yk8fjYdAEJCVDS+i2wdm3b7L6agTKWrmNzJM2M21qKqVehM2rVgEfDt86f6R+6wHe+DMNbU8x4UcuvtFv1yHVhVLhNFw28LNZPsph4="
+  - secure: E9eOZEc4/D/B3BULmx7x60jeMdaeWrx0h6JfsW985lsvHS1DQrLKPdMzzN724zupGfPA7OQz0PLHI0sFid3s1GcQQtfA1BnjDFIYHUScPMKJlvDhFa5/wpnJtVyhRdWdaPjuUR4gGatE4p4hNoYqE0W82woqkT4iAKdMqhQOaKeN0a80KcXqFMOOGczvaJ8WHOmRWIhjxgbfjQaVKfPJknVLk3U8j9j/50BTBKXkXLm+qPDj9Ww5N3sYULGdAy6fURVlrxR7CcueCagog7p5FsQ/r4MqNSFphqsrbaOYPP/kCI0LLrN9natii3rQuLgOihrdrNzkhUpD+t7Ng8n6jT+25HhoruQG5H5qQANZKbuoR+DLjvxffXuGatAB53a86eigKBQCukIC5o9BycOto0sYpLC5ddVMHjTGVXl/R4lBrzEs0dh1ytWKlg66o2GRbLbmLwB3jGCvMgVI//sjq3ecjib2BxNhfIwrQdXYd6kiUNhmyYcPb/c69spw2PSZwDwvpQi3Ze59/+kob/ogdTo3V+ugt3PCUkFbbN0fJy96BILiOkvoEiAEpDdGEQz4fegi/tGrAGAfP1q1L6n/88N9KEXT3MpvBq3xFDXG+z9wsWCxW3ZZS2cj1sRjHkajYlvkY55QcxgF9+/xvX+H9pcbwIFJOQyf+5qXghT/6aI=
+  - secure: V5IrF13gGl+Rfxa/I/5ACo0eDHd/uIH9F5Fk0UAIBtWI4L6Arxm4w2UVYnUC1c6E0XW0fRlswbSaUTXVwakpnP1Tr28obgtK932CXH7KsVnq61D5kjyyQeLuggZuB3dlXu/4fKNt0yvD/jul0yWtTzkmMG8RHm0nfRg7ggMtY/mr+pEVZAAHf9DwCObn1zlIjjCDOq6Ec3kwVf3z9ptwOGqIIqeiF/UY0ElTHqP99XD8rUAC/d0jTWM4GBYo1l5kGQYBOY3WLOsxGxT+SId7JRqEwMCBxaeT9TU9ADUMI4ct+i5F+qJKeI02pq3XljHnkbjd9eLthhqUFgdfoWD47RIgGsG1vbdwrjN6WYGl3q13NJrSlUpv8vnjvl6x7QsOyxuvtLTwNGHUmLsiNhaHRHRSpnwcqjT2XL+t4XJdK3xRTU0Y2293Hyi0E00/0YeeLLIttHeoQq9h+YzHLok9lHdbvwKbkPt7LQ9Jgbf/1iiaSPEhOqmOrfKm804Lk/I+z72gbcZSXIPoF1QB5EowwOU4Ax5qEZBit9z1RdAN56WkmwU80QSGQGMKDjQgwLiOHaxL2yk8fjYdAEJCVDS+i2wdm3b7L6agTKWrmNzJM2M21qKqVehM2rVgEfDt86f6R+6wHe+DMNbU8x4UcuvtFv1yHVhVLhNFw28LNZPsph4=
 matrix:
   allow_failures:
   - env: ELECTRON_VERSION="3.0.10" NODE_NVM_VERSION="10.2.0"
@@ -32,10 +32,7 @@ before_install:
   export npm_config_runtime=electron;
   fi
 - COMMIT_MESSAGE=$(git show -s --format=%B $TRAVIS_COMMIT | tr -d '\n')
-- PUBLISH_BINARY=false
-- if test "${COMMIT_MESSAGE#*'[publish binary]'}" != "$COMMIT_MESSAGE" && test "${TRAVIS_BRANCH}"
-  == "master" && test "${TRAVIS_PULL_REQUEST}" == "false"; then PUBLISH_BINARY=true;
-  fi;
+- PUBLISH_BINARY=true
 - if [[ $MUSL ]]; then
   EXTRA_NODE_PRE_GYP_FLAGS="--target_libc=musl";
   fi
@@ -51,7 +48,7 @@ install:
 - if [[ $MUSL ]]; then
   scripts/alpine-build.sh;
   fi
-- if [[ !$MUSL ]]; then
+- if [[ $MUSL != "true" ]]; then
   npm install --build-from-source;
   fi
 script:
