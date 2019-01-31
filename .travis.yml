@@ -49,10 +49,10 @@ before_install:
   fi
 install:
 - if [[ $MUSL ]]; then
-  scripts/alpine-build.sh
+  scripts/alpine-build.sh;
   fi
 - if [[ !$MUSL ]]; then
-  npm install --build-from-source
+  npm install --build-from-source;
   fi
 script:
 - ./node_modules/.bin/node-pre-gyp package testpackage $EXTRA_NODE_PRE_GYP_FLAGS
