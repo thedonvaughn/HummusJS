@@ -43,7 +43,7 @@
     "module_name": "hummus",
     "module_path": "./binding",
     "remote_path": "./{module_name}/v{version}/{toolset}/",
-    "host": "https://hummus.s3-us-west-2.amazonaws.com",
+    "host": "https://hummus-test.s3-us-west-2.amazonaws.com",
     "package_name": "{node_abi}-{platform}-{arch}-{libc}.tar.gz"
   },
   "publishConfig": {

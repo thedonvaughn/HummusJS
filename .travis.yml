@@ -9,26 +9,15 @@ addons:
     sources:
     - ubuntu-toolchain-r-test
     packages:
-    - g++-4.8
+    - g++-4.8 musl-tools 
 env:
   matrix:
-  - NODE_NVM_VERSION="4.9.1"
-  - NODE_NVM_VERSION="5.12.0"
-  - NODE_NVM_VERSION="6.14.1"
-  - NODE_NVM_VERSION="7.10.1"
-  - NODE_NVM_VERSION="8.11.1"
-  - NODE_NVM_VERSION="9.11.1"
-  - NODE_NVM_VERSION="10.8.0"
-  - NODE_NVM_VERSION="11.2.0"
-  - ELECTRON_VERSION="1.8.7" NODE_NVM_VERSION="8.11.1"
-  - ELECTRON_VERSION="2.0.7" NODE_NVM_VERSION="8.11.1"
-  - ELECTRON_VERSION="3.0.10" NODE_NVM_VERSION="10.2.0"
   - MUSL=true NODE_NVM_VERSION="9.11.1"
   - MUSL=true NODE_NVM_VERSION="10.8.0"
   - MUSL=true NODE_NVM_VERSION="11.2.0"
   global:
-  - secure: UwtG8rFAF8+tDmifVecoT9vm1ya/3iTK+pYSs0Qolo6Th6oMWv1pK/yE32iK4J0P4mRCE0OEV1FjhYpBp1zug6GaREV7cCaIexqY5m02AXsQ7jmNVRe4bQedaLYkJQP6xPCx26/Pu1ZHi+x6v8mDyqY9nSdlP7CL23iVobuw53Am/ZR5BK4bKB19HJiX2N1gqHHhzV1gFQxZBwxeLm55K7Fu+YbmUrPMMmR42alpiCSSyWJPhijDrVWdCA7ess73Hfu9vrrSEpRHgG+d2LXErTy1InRibmxwhEELgZMUmADMIyLk5YceoRNmESsWOfXUOrQGN5qjnomdd9+y7u2jXxaSnAPAlEcbZsMX7emVdsUlzacSEi/pMEVtSAgF6vCHFpkTMr+XtKUwJwu+c76kxAdfOSu1pY4Z6QsDvvfOF1OhBYiLM4ph7QfqEK0eS6lh6vJF6F1iwZ4BfEYcu7a8ANqv6d4odqLnGtMNJoJ7ijbDkxVoRP+pmh4tBNXMd23bpECR3U8iuWHPkWiMmXtIrgy7WzRqxomCrtuxO/ZetLm0ctsihsN7Z1Sgb3/hJiGO7oEZZBSzdF02/Q1umPz6xvqbvQJp+VA/CqSq0+fx+DGacxOOQar87N268d0Y62q1i02eyvzBgY8X9awN4EvIp16yRCJCNart7T4dIkurSwE=
-  - secure: OFo+Aqvq/FJLey1wXN8IrRw42aoccTIX90d9DFrpIieJ436WDpBdl3QgzPuCrJiBW9VxCdgzF1xvkFm1+VwzqvqXgAZfTJeJ2AhDjltzHtN+QzJx7SwQcsMAEbSgdLbboGJuyf1yeCs5x95792U+CXm3xy+zLkKw9XO9682WaO6uAp6mVX0wD7Z6u8qLbwMI6YXcY99rptiEtQ4TzKWHQI4m5dSHkCISmNGtBOuOZEF8v3FJ8TzEmjEJ1FNRrjAcwFcTgIwoHudmrs/GGaWBpwyq24XmBG8cavDeKaezmL80vBbGJaOR9IdVwYKNaeslNZBCxGoq3Cy1ReB2cECPw2yhFUktlHqr4SzzCt8JgMgtH8dLajQTdpznJssJesGfz4kwBu+IKGxrIqkh6/YEtYJFEUaaVBjyt7uyuXefZpoz19E63ZzqtrtHRFhdru4aEaUk6CibfljMMaLnxnvdkhQljz5SAhgh55aAUCejh1mgFIR5O3W4AD/3zrIL6HDOLEbYmFbDAsYIoPqp5g+9oiJ6sPyO75wtlFo4ciaw5K7o1y4NTh9BCB7j0P3FYAMqf2Z/wT2kU6W0MKFyo6AmOL4w7uwT/OAgYbWn1hgG2toAtatFrXnUu5CQTBwxel4uTiLkJIa1Zoy53BJxzDUVGgDvs/+sjV3lIr5J09B2kmA=
+  - secure: "E9eOZEc4/D/B3BULmx7x60jeMdaeWrx0h6JfsW985lsvHS1DQrLKPdMzzN724zupGfPA7OQz0PLHI0sFid3s1GcQQtfA1BnjDFIYHUScPMKJlvDhFa5/wpnJtVyhRdWdaPjuUR4gGatE4p4hNoYqE0W82woqkT4iAKdMqhQOaKeN0a80KcXqFMOOGczvaJ8WHOmRWIhjxgbfjQaVKfPJknVLk3U8j9j/50BTBKXkXLm+qPDj9Ww5N3sYULGdAy6fURVlrxR7CcueCagog7p5FsQ/r4MqNSFphqsrbaOYPP/kCI0LLrN9natii3rQuLgOihrdrNzkhUpD+t7Ng8n6jT+25HhoruQG5H5qQANZKbuoR+DLjvxffXuGatAB53a86eigKBQCukIC5o9BycOto0sYpLC5ddVMHjTGVXl/R4lBrzEs0dh1ytWKlg66o2GRbLbmLwB3jGCvMgVI//sjq3ecjib2BxNhfIwrQdXYd6kiUNhmyYcPb/c69spw2PSZwDwvpQi3Ze59/+kob/ogdTo3V+ugt3PCUkFbbN0fJy96BILiOkvoEiAEpDdGEQz4fegi/tGrAGAfP1q1L6n/88N9KEXT3MpvBq3xFDXG+z9wsWCxW3ZZS2cj1sRjHkajYlvkY55QcxgF9+/xvX+H9pcbwIFJOQyf+5qXghT/6aI="
+  - secure: "V5IrF13gGl+Rfxa/I/5ACo0eDHd/uIH9F5Fk0UAIBtWI4L6Arxm4w2UVYnUC1c6E0XW0fRlswbSaUTXVwakpnP1Tr28obgtK932CXH7KsVnq61D5kjyyQeLuggZuB3dlXu/4fKNt0yvD/jul0yWtTzkmMG8RHm0nfRg7ggMtY/mr+pEVZAAHf9DwCObn1zlIjjCDOq6Ec3kwVf3z9ptwOGqIIqeiF/UY0ElTHqP99XD8rUAC/d0jTWM4GBYo1l5kGQYBOY3WLOsxGxT+SId7JRqEwMCBxaeT9TU9ADUMI4ct+i5F+qJKeI02pq3XljHnkbjd9eLthhqUFgdfoWD47RIgGsG1vbdwrjN6WYGl3q13NJrSlUpv8vnjvl6x7QsOyxuvtLTwNGHUmLsiNhaHRHRSpnwcqjT2XL+t4XJdK3xRTU0Y2293Hyi0E00/0YeeLLIttHeoQq9h+YzHLok9lHdbvwKbkPt7LQ9Jgbf/1iiaSPEhOqmOrfKm804Lk/I+z72gbcZSXIPoF1QB5EowwOU4Ax5qEZBit9z1RdAN56WkmwU80QSGQGMKDjQgwLiOHaxL2yk8fjYdAEJCVDS+i2wdm3b7L6agTKWrmNzJM2M21qKqVehM2rVgEfDt86f6R+6wHe+DMNbU8x4UcuvtFv1yHVhVLhNFw28LNZPsph4="
 matrix:
   allow_failures:
   - env: ELECTRON_VERSION="3.0.10" NODE_NVM_VERSION="10.2.0"
@@ -47,7 +36,7 @@ before_install:
   fi;
 - if [[ $MUSL ]]; then
   EXTRA_NODE_PRE_GYP_FLAGS="--target_libc=musl";
-  fi;
+  fi
 - git clone https://github.com/creationix/nvm.git ../.nvm && source ../.nvm/nvm.sh
 - nvm install $NODE_NVM_VERSION
 - nvm use $NODE_NVM_VERSION
@@ -55,8 +44,17 @@ before_install:
 - node --version
 - npm --version
 - $CXX --version
+  fi
 install:
-- npm install --build-from-source
+- if [[ $MUSL ]]; then
+  docker run -v ${PWD}:/build -i node:9.11.1-alpine /bin/sh <<-EOF
+  apk add --no-cache make gcc jq g++ python
+  cd /build
+  EXTRA_NODE_PRE_GYP_FLAGS="--target_libc=musl" npm install --build-from-source --unsafe-perm
+  EOF
+  else
+  npm install --build-from-source
+  fi
 script:
 - ./node_modules/.bin/node-pre-gyp package testpackage $EXTRA_NODE_PRE_GYP_FLAGS
 - npm test
