@@ -23,6 +23,8 @@ env:
 matrix:
   allow_failures:
   - env: ELECTRON_VERSION="3.0.10" NODE_NVM_VERSION="10.2.0"
+  - os: osx
+    env: MUSL=true 
 before_install:
 - if [[ $TRAVIS_OS_NAME == "linux" ]]; then export CXX=g++-4.8; fi
 - if [[ $ELECTRON_VERSION ]]; then
@@ -33,7 +35,7 @@ before_install:
   fi
 - COMMIT_MESSAGE=$(git show -s --format=%B $TRAVIS_COMMIT | tr -d '\n')
 - PUBLISH_BINARY=true
-- if [[ $MUSL ]]; then
+- if [[ $MUSL && $TRAVIS_OS_NAME == "linux" ]]; then
   EXTRA_NODE_PRE_GYP_FLAGS="--target_libc=musl";
   fi
 - git clone https://github.com/creationix/nvm.git ../.nvm && source ../.nvm/nvm.sh
@@ -45,7 +47,7 @@ before_install:
 - $CXX --version
   fi
 install:
-- if [[ $MUSL ]]; then
+- if [[ $MUSL && ]]; then
   scripts/alpine-build.sh;
   fi
 - if [[ $MUSL != "true" ]]; then
