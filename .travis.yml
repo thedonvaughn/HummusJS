@@ -11,7 +11,7 @@ addons:
     packages:
     - g++-4.8
 services:
-    - docker
+- docker
 env:
   matrix:
   - NODE_NVM_VERSION="4.9.1"
@@ -29,8 +29,8 @@ env:
   - MUSL=true NODE_NVM_VERSION="10.8.0"
   - MUSL=true NODE_NVM_VERSION="11.2.0"
   global:
-  - secure: UwtG8rFAF8+tDmifVecoT9vm1ya/3iTK+pYSs0Qolo6Th6oMWv1pK/yE32iK4J0P4mRCE0OEV1FjhYpBp1zug6GaREV7cCaIexqY5m02AXsQ7jmNVRe4bQedaLYkJQP6xPCx26/Pu1ZHi+x6v8mDyqY9nSdlP7CL23iVobuw53Am/ZR5BK4bKB19HJiX2N1gqHHhzV1gFQxZBwxeLm55K7Fu+YbmUrPMMmR42alpiCSSyWJPhijDrVWdCA7ess73Hfu9vrrSEpRHgG+d2LXErTy1InRibmxwhEELgZMUmADMIyLk5YceoRNmESsWOfXUOrQGN5qjnomdd9+y7u2jXxaSnAPAlEcbZsMX7emVdsUlzacSEi/pMEVtSAgF6vCHFpkTMr+XtKUwJwu+c76kxAdfOSu1pY4Z6QsDvvfOF1OhBYiLM4ph7QfqEK0eS6lh6vJF6F1iwZ4BfEYcu7a8ANqv6d4odqLnGtMNJoJ7ijbDkxVoRP+pmh4tBNXMd23bpECR3U8iuWHPkWiMmXtIrgy7WzRqxomCrtuxO/ZetLm0ctsihsN7Z1Sgb3/hJiGO7oEZZBSzdF02/Q1umPz6xvqbvQJp+VA/CqSq0+fx+DGacxOOQar87N268d0Y62q1i02eyvzBgY8X9awN4EvIp16yRCJCNart7T4dIkurSwE=
-  - secure: OFo+Aqvq/FJLey1wXN8IrRw42aoccTIX90d9DFrpIieJ436WDpBdl3QgzPuCrJiBW9VxCdgzF1xvkFm1+VwzqvqXgAZfTJeJ2AhDjltzHtN+QzJx7SwQcsMAEbSgdLbboGJuyf1yeCs5x95792U+CXm3xy+zLkKw9XO9682WaO6uAp6mVX0wD7Z6u8qLbwMI6YXcY99rptiEtQ4TzKWHQI4m5dSHkCISmNGtBOuOZEF8v3FJ8TzEmjEJ1FNRrjAcwFcTgIwoHudmrs/GGaWBpwyq24XmBG8cavDeKaezmL80vBbGJaOR9IdVwYKNaeslNZBCxGoq3Cy1ReB2cECPw2yhFUktlHqr4SzzCt8JgMgtH8dLajQTdpznJssJesGfz4kwBu+IKGxrIqkh6/YEtYJFEUaaVBjyt7uyuXefZpoz19E63ZzqtrtHRFhdru4aEaUk6CibfljMMaLnxnvdkhQljz5SAhgh55aAUCejh1mgFIR5O3W4AD/3zrIL6HDOLEbYmFbDAsYIoPqp5g+9oiJ6sPyO75wtlFo4ciaw5K7o1y4NTh9BCB7j0P3FYAMqf2Z/wT2kU6W0MKFyo6AmOL4w7uwT/OAgYbWn1hgG2toAtatFrXnUu5CQTBwxel4uTiLkJIa1Zoy53BJxzDUVGgDvs/+sjV3lIr5J09B2kmA=
+  - secure: keweAYtX6UpAHnUHnlTY8u9w9Sf8ncBQHrmI/ZGeJUucmv8Lpi7PgTNC+RpDfr5iIVf362fxZ2nQHsXbEmEjlb4lWM6fpVlJDOSgA/VRBqjDk8nOCaDCxxs2gpEOo3SD9G1YkglfJfH/z1YDVpneM7W/+6GZGsIcRndEUIuhevhGG78aTrC2drZWoo4Adp2AyM2czRlQF+Nb9Yg5F7BvHdBibJTx5ZojLmEuHhIU3W9JEjBYKOv/1XPV396VjPA1upVyHC9E7rK5ch6W3fRN7LyqTNgcN0HI1ZQrud95FAU5MRuw/BtObouVSYXwkpteoYRSZwHiaKT4WnKiMTG/j0kK68RjeP0CSiSOqEQHWn2wUhgoKfkdxRYbaw7OFdIE87CpwxROiwQV2SMW/1r2whDh/KqWUIc06hrR52UQMlJSpzVPjj6TVHeVG9Y9CkTeFdEF4p/DA4HZHswYGJBkdx9erlF/vsFx+pSYZvwu+F0qY0THzabFx5FiI2iWjnvJlKqtpvwfNc5rje53LfpP+jkb/+5Z+l3C3EMdVbXK/KJllexXAoHr99NY3HOU25RBuqBusrZgeLlvme5UH6LvF1DQ3EYnDQ/6wSsKzvu4Qh30Y4jpu1b8MW9a0sX/lrBtIM2y44aqOAF7a4wBqt5mEHxOmLdaBydZc5K4f4Hc6UQ=
+  - secure: RoLxMNC+249VHBTVCN0kT9yf4lEW+f+JkZSWQTs4Sr/26WeZqzD6rgm4c89OOoGZs4nl/iNN6o/I1UgWhdcdPptdD+Hd7nXRm6Z6GcXQZGDkBMWGs8JnFQwR2om4XPNtJofbuoe4jlp2wdmQ48QyeZeOHooyTM0V1dz9ZMi6cbE2x/D+8fkT+YzzOf8r+8j4bOhxsZWY7CdqRaKwRZiDiezeN5CtfKO9+1WwENiybdWLi95T2AGd2417UaYGruUs+JXBlFqV7XOPDB1QYXGvSlCVR3m8hiaj4HWxDYTuMpNyUCJgjjOwe9BEB95ERqgpSQ78YOYHzXPkRYCSsl/dTTPTejkb1K+PYGYF3NqGhWrQ7Dy96C5WJlodhbI/oRPLOPSbQpG44esx9maxtK+XF2VCNxKuNMODiLww6NQMfV/qYwr+9gh8USDFDse5UxkiIozZt7U1tWQjvGexiObzH/bgQl6Ygm/uDB5KT6iZVstXU7rKzWxnoWegrcVqt4THixQU4u1GO3Y+B+kYBpbBkHIysKQEV7wS5JVrqhqGozPRW0Vf4Em+3L5R6LSqVuSln6OQKbN1UHdzKljKZCT+KMhpy68TKSc/VEyU/Hrtr/Gb5fDfy3y8vF/uIn5kFBqsiR4kgMGPMl1wHG2fuhcWi7J75VyksiWLQ4OxMj6K36U=
 matrix:
   allow_failures:
   - env: ELECTRON_VERSION="3.0.10" NODE_NVM_VERSION="10.2.0"
@@ -40,50 +40,30 @@ matrix:
     env: MUSL=true NODE_NVM_VERSION="10.8.0"
   - os: osx
     env: MUSL=true NODE_NVM_VERSION="11.2.0"
-
 before_install:
 - if [[ $TRAVIS_OS_NAME == "linux" ]]; then export CXX=g++-4.8; fi
-- if [[ $ELECTRON_VERSION ]]; then
-  export npm_config_target=$ELECTRON_VERSION;
-  export npm_config_target_arch=x64;
-  export npm_config_disturl=https://atom.io/download/electron;
-  export npm_config_runtime=electron;
-  fi
+- if [[ $ELECTRON_VERSION ]]; then export npm_config_target=$ELECTRON_VERSION; export
+  npm_config_target_arch=x64; export npm_config_disturl=https://atom.io/download/electron;
+  export npm_config_runtime=electron; fi
 - COMMIT_MESSAGE=$(git show -s --format=%B $TRAVIS_COMMIT | tr -d '\n')
-- PUBLISH_BINARY=false
-- if test "${COMMIT_MESSAGE#*'[publish binary]'}" != "$COMMIT_MESSAGE" && test "${TRAVIS_BRANCH}"
-  == "master" && test "${TRAVIS_PULL_REQUEST}" == "false"; then PUBLISH_BINARY=true;
-  fi;
-- if [[ $MUSL ]]; then
-  EXTRA_NODE_PRE_GYP_FLAGS="--target_libc=musl";
-  fi;
+- PUBLISH_BINARY=true
+- if [[ $MUSL ]]; then EXTRA_NODE_PRE_GYP_FLAGS="--target_libc=musl"; fi;
 - git clone https://github.com/creationix/nvm.git ../.nvm && source ../.nvm/nvm.sh
 - nvm install $NODE_NVM_VERSION
 - nvm use $NODE_NVM_VERSION
 - echo $PUBLISH_BINARY
 - node --version
 - npm --version
-- $CXX --version
+- "$CXX --version"
 install:
-- if [[ $MUSL ]]; then
-  scripts/alpine-build.sh;
-  else
-  npm install --build-from-source;
+- if [[ $MUSL ]]; then scripts/alpine-build.sh; else npm install --build-from-source;
   fi
 script:
-- if [[ $MUSL ]]; then
-  scripts/alpine-test.sh ./node_modules/.bin/node-pre-gyp package testpackage $EXTRA_NODE_PRE_GYP_FLAGS;
-  else
-  ./node_modules/.bin/node-pre-gyp package testpackage $EXTRA_NODE_PRE_GYP_FLAGS;
-  npm test;
-  fi
-- if [[ "${PUBLISH_BINARY}" ]]; then
-  ./node_modules/.bin/node-pre-gyp unpublish publish $EXTRA_NODE_PRE_GYP_FLAGS; 
-  rm -rf {build,binding};
-  fi
-- if [[ $MUSL ]]; then 
-  ./scripts/alpine-test.sh ./node_modules/.bin/node-pre-gyp install $EXTRA_NODE_PRE_GYP_FLAGS;
-  else
-  ./node_modules/.bin/node-pre-gyp install $EXTRA_NODE_PRE_GYP_FLAGS;
-  npm test;
-  fi
+- if [[ $MUSL ]]; then scripts/alpine-test.sh ./node_modules/.bin/node-pre-gyp package
+  testpackage $EXTRA_NODE_PRE_GYP_FLAGS; else ./node_modules/.bin/node-pre-gyp package
+  testpackage $EXTRA_NODE_PRE_GYP_FLAGS; npm test; fi
+- if [[ "${PUBLISH_BINARY}" ]]; then ./node_modules/.bin/node-pre-gyp unpublish publish
+  $EXTRA_NODE_PRE_GYP_FLAGS; rm -rf {build,binding}; fi
+- if [[ $MUSL ]]; then ./scripts/alpine-test.sh ./node_modules/.bin/node-pre-gyp install
+  $EXTRA_NODE_PRE_GYP_FLAGS; else ./node_modules/.bin/node-pre-gyp install $EXTRA_NODE_PRE_GYP_FLAGS;
+  npm test; fi
