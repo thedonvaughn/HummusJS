@@ -69,4 +69,6 @@ script:
   fi
 - if [[ "${PUBLISH_BINARY}" == "true" && "${MUSL}" == "true"]]; then 
   ./node_modules/.bin/node-pre-gyp unpublish publish $EXTRA_NODE_PRE_GYP_FLAGS; 
+  rm -rf {build,binding};
+  ./scripts/alpine-final-test.sh;
   fi
