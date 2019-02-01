@@ -47,15 +47,26 @@ before_install:
 - $CXX --version
   fi
 install:
-- if [[ $MUSL && ]]; then
+- if [[ $MUSL ]]; then
   scripts/alpine-build.sh;
   fi
 - if [[ $MUSL != "true" ]]; then
   npm install --build-from-source;
   fi
 script:
-- ./node_modules/.bin/node-pre-gyp package testpackage $EXTRA_NODE_PRE_GYP_FLAGS
-- npm test
-- if [[ "${PUBLISH_BINARY}" == "true" ]]; then ./node_modules/.bin/node-pre-gyp unpublish
-  publish $EXTRA_NODE_PRE_GYP_FLAGS; rm -rf {build,binding}; ./node_modules/.bin/node-pre-gyp install $EXTRA_NODE_PRE_GYP_FLAGS; npm test;
+- if [[ $MUSL ]]; then
+  scripts/alpine-test.sh;
+  fi
+- if [[ $MUSL != "true" ]]; then
+  ./node_modules/.bin/node-pre-gyp package testpackage $EXTRA_NODE_PRE_GYP_FLAGS;
+  npm test;
+  fi
+- if [[ "${PUBLISH_BINARY}" == "true" && "${MUSL}" != "true"]]; then 
+  ./node_modules/.bin/node-pre-gyp unpublish publish $EXTRA_NODE_PRE_GYP_FLAGS; 
+  rm -rf {build,binding};
+  ./node_modules/.bin/node-pre-gyp install $EXTRA_NODE_PRE_GYP_FLAGS;
+  npm test;
+  fi
+- if [[ "${PUBLISH_BINARY}" == "true" && "${MUSL}" == "true"]]; then 
+  ./node_modules/.bin/node-pre-gyp unpublish publish $EXTRA_NODE_PRE_GYP_FLAGS; 
   fi
